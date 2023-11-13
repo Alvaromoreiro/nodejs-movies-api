@@ -1,3 +1,5 @@
+## ![Moreiro_cinema](./cinema.webp)
+
 # Proyecto de API con Node.js
 
 Este proyecto es una API desarrollada con Node.js que utiliza diversas carpetas para organizar su estructura. A continuación, se proporciona una descripción de cada carpeta y las dependencias utilizadas en el proyecto.
