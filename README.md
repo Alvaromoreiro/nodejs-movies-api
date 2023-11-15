@@ -2,7 +2,7 @@
 
 # Proyecto de API con Node.js
 
-Este proyecto es una API desarrollada con Node.js que utiliza diversas carpetas para organizar su estructura. A continuación, se proporciona una descripción de cada carpeta y las dependencias utilizadas en el proyecto.
+Este proyecto se centra en la creación de una API de películas utilizando Node.js y sigue el patrón de arquitectura Modelo-Vista-Controlador (MVC). La flexibilidad de esta arquitectura permite cambiar fácilmente el modelo para obtener datos de distintas fuentes, adaptándose a diversas necesidades.
 
 ## Estructura de Carpetas
 
@@ -10,7 +10,7 @@ Este proyecto es una API desarrollada con Node.js que utiliza diversas carpetas 
 - **middlewares:** Almacena middleware personalizados que se utilizan en las rutas.
 - **utils:** Contiene utilidades y funciones de ayuda utilizadas en todo el proyecto.
 - **models:** Contiene los modelos de datos de la aplicación.
-- **schemas:** Guarda los esquemas de validación utilizados, especialmente si estás utilizando Zod para validar los datos.
+- **schemas:** Guarda los esquemas de validación utilizados.
 - **routes:** Contiene las definiciones de las rutas de la API.
 
 ## Dependencias
@@ -122,43 +122,12 @@ Para levantar el proyecto, primero necesitarás instalar Node.js y npm en tu sis
 
    - Inicia el servidor con el siguiente comando:
      ```bash
-     npm start
+     npm run dev:mongo
      ```
 
 6. **Accede a la API:**
-   - Abre tu navegador y accede a la URL de la API (por defecto, http://localhost:3000).
+   - Abre tu navegador y accede a la URL de la API (por defecto, http://localhost:8080).
 
-Ahora deberías tener el proyecto levantado y listo para probar. Puedes usar la extensión "Rest Client" en Visual Studio Code o cualquier otra herramienta de tu elección para realizar solicitudes a la API. ¡Buena suerte con tu proyecto!
-
-## Configuración
-
-1. Crea un archivo `.env` en la raíz del proyecto y establece la clave de MongoDB:
-
-   ```plaintext
-   MONGODB_PASSWORD="CLAVE"
-   ```
-
-2. Instala las dependencias del proyecto:
-
-   ```bash
-   npm install
-   ```
-
-3. Ejecuta el servidor:
-
-- JSON
-  ```bash
-  npm run dev:json
-  ```
-- MONGODB
-  ```bash
-  npm run dev:mongo
-  ```
-
-El servidor se ejecutará en el puerto especificado en tu archivo `.env` o en el puerto predeterminado 8080. Puedes acceder a la API en `http://localhost:8080`.
-
-## Probando la API
-
-Puedes utilizar la extensión "Rest Client" en Visual Studio Code para probar la API. Asegúrate de tener el archivo `requests.http` y utiliza los archivos de ejemplo proporcionados para realizar solicitudes de prueba.
+Ahora deberías tener el proyecto levantado y listo para probar. Puedes utilizar la extensión "Rest Client" en Visual Studio Code para probar la API. Asegúrate de tener el archivo `api.http` y utiliza los archivos de ejemplo proporcionados para realizar solicitudes de prueba.
 
 Alternativamente, puedes usar Postman u otra herramienta similar para probar las rutas de la API. Asegúrate de ajustar las URL y los datos según sea necesario para tu entorno de desarrollo.
